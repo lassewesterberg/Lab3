@@ -3,7 +3,10 @@ using System.Linq;
 using System.Web.Mvc;
 using System.Web.Routing;
 using Ninject;
+using SportsStore.Domain.Entities;
 using SportsStore.Domain.Abstract;
+using Moq;
+using System.Collections.Generic;
 
 namespace SportsStore.WebUI.Infrastructure {
    
