@@ -16,7 +16,7 @@ namespace SportsStore.UnitTests
     /// Summary description for PaginationTest
     /// </summary>
     [TestClass]
-    public class PaginationTest
+    public class Can_PaginateTest
     {
         [TestMethod]
         public void Can_Paginate()
@@ -35,7 +35,7 @@ namespace SportsStore.UnitTests
             ProductController controller = new ProductController(mock.Object);
             controller.PageSize = 3;
             // Action
-            ProductsListViewModel result = (ProductsListViewModel)controller.List(2).Model;
+            ProductsListViewModel result = (ProductsListViewModel)controller.List(null, 2).Model;
             // Assert
             Product[] prodArray = result.Products.ToArray();
             Assert.IsTrue(prodArray.Length == 2);

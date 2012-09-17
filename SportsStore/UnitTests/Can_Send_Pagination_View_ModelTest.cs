@@ -15,7 +15,7 @@ namespace SportsStore.UnitTests
     /// Summary description for PageModelViewDataTest
     /// </summary>
     [TestClass]
-    public class PageModelViewDataTest
+    public class Can_Send_Pagination_View_ModelTest
     {
         [TestMethod]
         public void Can_Send_Pagination_View_Model()
@@ -34,7 +34,7 @@ namespace SportsStore.UnitTests
             ProductController controller = new ProductController(mock.Object);
             controller.PageSize = 3;
             // Action
-            ProductsListViewModel result = (ProductsListViewModel)controller.List(2).Model;
+            ProductsListViewModel result = (ProductsListViewModel)controller.List(null, 2).Model;
             // Assert
             PagingInfo pageInfo = result.PagingInfo;
             Assert.AreEqual(pageInfo.CurrentPage, 2);

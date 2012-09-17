@@ -14,7 +14,7 @@ namespace SportsStore.UnitTests
     /// Summary description for PageLinksTest
     /// </summary>
     [TestClass]
-    public class PageLinksTest
+    public class Can_Generate_Page_LinksTest
     {
         [TestMethod]
         public void Can_Generate_Page_Links()
