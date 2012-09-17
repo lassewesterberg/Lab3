@@ -68,9 +68,11 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adding_Product_To_Cart_Goes_To_Cart_ScreenTest.cs" />
     <Compile Include="Calculate_Cart_TotalTest.cs" />
     <Compile Include="Can_Add_New_Lines%28Test.cs" />
     <Compile Include="Can_Add_Quantity_For_Existing_LinesTest.cs" />
+    <Compile Include="Can_Add_To_CartTest.cs" />
     <Compile Include="Can_Clear_ContentsTest.cs" />
     <Compile Include="Can_Create_CategoriesTest.cs" />
     <Compile Include="Can_Filter_ProductsTest.cs" />
@@ -78,6 +80,7 @@
     <Compile Include="Can_Remove_LineTest.cs" />
     <Compile Include="Can_Send_Pagination_View_ModelTest.cs" />
     <Compile Include="Can_PaginateTest.cs" />
+    <Compile Include="Can_View_Cart_ContentsTest.cs" />
     <Compile Include="Generate_Category_Specific_Product_CountTest.cs" />
     <Compile Include="Indicates_Selected_CategoryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

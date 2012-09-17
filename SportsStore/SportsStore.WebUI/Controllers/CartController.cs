@@ -48,6 +48,10 @@ namespace SportsStore.WebUI.Controllers {
 				Cart = GetCart(),
 				ReturnUrl = returnUrl
 			});
-		} 
-	}
+		}
+
+        public object Index(Cart cart, string p) {
+            throw new System.NotImplementedException();
+        }
+    }
 }
