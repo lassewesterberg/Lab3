@@ -69,6 +69,7 @@
     <Compile Include="Can_Generate_Page_LinksTest.cs" />
     <Compile Include="Can_Send_Pagination_View_ModelTest.cs" />
     <Compile Include="Can_PaginateTest.cs" />
+    <Compile Include="Generate_Category_Specific_Product_CountTest.cs" />
     <Compile Include="Indicates_Selected_CategoryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
