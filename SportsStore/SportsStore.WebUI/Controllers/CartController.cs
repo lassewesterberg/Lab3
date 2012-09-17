@@ -13,22 +13,22 @@ namespace SportsStore.WebUI.Controllers {
 			repository = repo;
 		}
 
-		public RedirectToRouteResult AddToCart(int productId, string returnUrl) {
+		public RedirectToRouteResult AddToCart(Cart cart, int productId, string returnUrl) {
 			Product product = repository.Products
 				.FirstOrDefault(p => p.ProductID == productId);
 
 			if (product != null) {
-				GetCart().AddItem(product, 1);
+				cart.AddItem(product, 1);
 			}
 			return RedirectToAction("Index", new { returnUrl });
 		}
 
-		public RedirectToRouteResult RemoveFromCart(int productId, string returnUrl) {
+		public RedirectToRouteResult RemoveFromCart(Cart cart, int productId, string returnUrl) {
 			Product product = repository.Products
 				.FirstOrDefault(p => p.ProductID == productId);
 
 			if (product != null) {
-				GetCart().RemoveLine(product);
+				cart.RemoveLine(product);
 			}
 			return RedirectToAction("Index", new { returnUrl });
 		}
