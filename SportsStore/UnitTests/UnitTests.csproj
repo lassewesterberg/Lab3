@@ -67,6 +67,7 @@
     <Compile Include="Calculate_Cart_TotalTest.cs" />
     <Compile Include="Can_Add_New_Lines%28Test.cs" />
     <Compile Include="Can_Add_Quantity_For_Existing_LinesTest.cs" />
+    <Compile Include="Can_Clear_ContentsTest.cs" />
     <Compile Include="Can_Create_CategoriesTest.cs" />
     <Compile Include="Can_Filter_ProductsTest.cs" />
     <Compile Include="Can_Generate_Page_LinksTest.cs" />
