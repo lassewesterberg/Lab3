@@ -64,6 +64,7 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Can_Add_New_Lines%28Test.cs" />
     <Compile Include="Can_Create_CategoriesTest.cs" />
     <Compile Include="Can_Filter_ProductsTest.cs" />
     <Compile Include="Can_Generate_Page_LinksTest.cs" />
