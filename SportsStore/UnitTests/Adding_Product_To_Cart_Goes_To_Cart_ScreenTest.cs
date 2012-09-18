@@ -18,7 +18,6 @@ namespace UnitTests
     [TestClass]
     public class Adding_Product_To_Cart_Goes_To_Cart_ScreenTest
     {
-        
         [TestMethod]
         public void Adding_Product_To_Cart_Goes_To_Cart_Screen() {
             

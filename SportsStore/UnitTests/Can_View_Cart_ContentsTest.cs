@@ -7,6 +7,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SportsStore.Domain.Entities;
 using SportsStore.WebUI.Controllers;
 using SportsStore.WebUI.Models;
+using System.Web.UI.WebControls;
 
 namespace UnitTests
 {
@@ -28,7 +29,7 @@ namespace UnitTests
             
             // Act - call the Index action method
             CartIndexViewModel result
-                = (CartIndexViewModel)target.Index(cart, "myUrl").Viewbag.Model;
+                = (CartIndexViewModel)target.Index(cart, "myUrl").ViewBag.Model;
             
             // Assert
             Assert.AreSame(result.Cart, cart);

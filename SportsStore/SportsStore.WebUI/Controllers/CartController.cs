@@ -50,7 +50,7 @@ namespace SportsStore.WebUI.Controllers {
 			});
 		}
 
-        public object Index(Cart cart, string p) {
+        public ViewResult Index(Cart cart, string p) {
             throw new System.NotImplementedException();
         }
     }
